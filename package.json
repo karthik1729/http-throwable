@@ -1,6 +1,6 @@
 {
   "name": "http-throwable",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "HTTP Throwable utils",
   "main": "index.js",
   "scripts": {

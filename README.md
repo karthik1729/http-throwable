@@ -1,24 +1,3 @@
-#### Sample Usage
-```
-
-    const HTTPThrowable = require("http-throwable");
-    
-    app.use("/test",function(req, res, next){
-        ...
-        //Unauthorized
-        next(new HTTPThrowable(401));
-        //Status:401, Message:"Unauthorized"
-    })
-    
-    app.use("/test2",function(req, res, next){
-        ...
-        //Unauthorized
-        next(new HTTPThrowable(401, "Unauthorized Message"));
-        //Status:401, Message:"Unauthorized Message"
-    })
-    
-```
-
 #### Default Messages
 
 ##### 1×× Informational
@@ -150,3 +129,24 @@
 511 Network Authentication Required
 
 599 Network Connect Timeout Error
+
+#### Sample Usage
+```
+
+    const HTTPThrowable = require("http-throwable");
+    
+    app.use("/test",function(req, res, next){
+        ...
+        //Unauthorized
+        next(new HTTPThrowable(401));
+        //Status:401, Message:"Unauthorized"
+    })
+    
+    app.use("/test2",function(req, res, next){
+        ...
+        //Unauthorized
+        next(new HTTPThrowable(401, "Unauthorized Message"));
+        //Status:401, Message:"Unauthorized Message"
+    })
+    
+```

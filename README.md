@@ -1,4 +1,4 @@
-####Sample Usage
+#### Sample Usage
 ```
 
     const HTTPThrowable = require("http-throwable");
